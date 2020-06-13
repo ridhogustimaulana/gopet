@@ -18,7 +18,7 @@
                     <a href="{{ route('admin.home') }}" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">&ensp;Dashboard</span></a>
                 </li>
                 <li class="{{ Request::segment(2) === 'petshop' ? 'active' : null }}">
-                    <a href="{{ route('admin.petshop') }}" aria-expanded="false"><i class="fa fa-home"></i><span class="hide-menu">&ensp;PetShop</span></a>
+                    <a href="{{ route('admin.petshop') }}" aria-expanded="false"><i class="fa fa-home"></i><span class="hide-menu">&ensp;PetShops</span></a>
                 </li>
                 <li class="{{ Request::segment(2) === 'washing-and-spa' ? 'active' : null }}">
                     <a href="{{ route('admin.washing-and-spa') }}" aria-expanded="false"><i class="fa fa-shower"></i><span class="hide-menu">&ensp;Washing and Spa</span></a>
