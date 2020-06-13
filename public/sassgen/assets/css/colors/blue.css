@@ -1,0 +1,48 @@
+.btn.btn-fill {
+  background-color: #0198fa;
+}
+
+.btn.btn-fill:focus {
+  background-color: #0198fa;
+}
+
+.btn.btn-fill:hover {
+  background: #0198fa;
+}
+
+.btn.btn-stroke:hover {
+  background-color: #0198fa;
+}
+
+.mh-header .navbar-nav li.active a {
+  color: #0198fa;
+}
+
+.ev-testimonial .testimonial-inner .owl-next {
+  background: #0198fa;
+}
+
+.ev-footer-links .footer-items ul li a:hover {
+  color: #0198fa;
+}
+
+.lo-pricing-plan .pricing-item.pricing-item-2.blue-bg {
+  background: #0198fa;
+}
+
+.lo-pricing-plan .pricing-item.sky-color {
+  border-color: #0198fa;
+}
+
+.lo-pricing-plan .pricing-item.sky-color .pricing-item-bottom .btn {
+  background: #0198fa;
+}
+
+.lo-pricing-plan .pricing-item.red-color {
+  border-color: #0198fa;
+}
+
+.lo-pricing-plan .pricing-item.red-color .pricing-item-bottom .btn {
+  background: #0198fa;
+}
+/*# sourceMappingURL=blue.css.map */
