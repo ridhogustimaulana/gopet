@@ -57,6 +57,7 @@ class PetShopController extends Controller
             'street' => 'required',
             'districts' => 'required',
             'city' => 'required',
+            'phone' => 'required',
         ]);
 
         $petshop = new PetShop();
@@ -67,6 +68,7 @@ class PetShopController extends Controller
         $petshop->street = $request->street;
         $petshop->districts = $request->districts;
         $petshop->city = $request->city;
+        $petshop->phone = $request->phone;
         $petshop->latitude = $request->latitude;
         $petshop->longitude = $request->longitude;
 
@@ -116,6 +118,7 @@ class PetShopController extends Controller
             'street' => 'required',
             'districts' => 'required',
             'city' => 'required',
+            'phone' => 'required',
         ]);
 
         $petshop = PetShop::find($id);
@@ -131,6 +134,7 @@ class PetShopController extends Controller
         $petshop->street = $request->street;
         $petshop->districts = $request->districts;
         $petshop->city = $request->city;
+        $petshop->phone = $request->phone;
         $petshop->latitude = $request->latitude;
         $petshop->longitude = $request->longitude;
 

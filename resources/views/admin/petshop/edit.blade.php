@@ -78,6 +78,16 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
+                                            <label class="control-label">Phone <span
+                                                        class="text-danger">*</span></label>
+                                            <input name="phone" required type="phone" id="phone" class="form-control"
+                                                   value="{{ $petshop->phone }}" placeholder="Enter petshop number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
                                             <label class="control-label">Description</label>
                                             <textarea name="description" id="description" class="form-control" cols="30"
                                                       rows="10" placeholder="Enter petshop description">{{ $petshop->description }}</textarea>

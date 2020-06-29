@@ -20,7 +20,7 @@ class UserPetshop extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'image', 'name', 'email', 'password'
+        'image', 'name', 'email','phone', 'password'
     ];
 
     /**

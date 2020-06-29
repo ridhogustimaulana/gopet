@@ -43,6 +43,11 @@
                             <input name="name" class="form-control" type="text" required="" placeholder="Name">
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input name="phone" class="form-control" type="phone" required="" placeholder="Phone">
+                        </div>
+                    </div>
                     <div class="form-group ">
                         <div class="col-xs-12">
                             <input name="email" class="form-control" type="text" required="" placeholder="Email">

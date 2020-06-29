@@ -57,6 +57,12 @@
                     <div>
                         <hr> </div>
                     <div class="card-body">
+                        <small class="text-muted">Phone</small>
+                        <h6>{{ $user->phone }}</h6>
+                    </div>
+                    <div>
+                        <hr> </div>
+                    <div class="card-body">
                         <small class="text-muted">Email address </small>
                         <h6>{{ $user->email }}</h6>
                     </div>
@@ -93,6 +99,16 @@
                                                         class="text-danger">*</span></label>
                                             <input name="name" required type="text" id="name" class="form-control"
                                                    placeholder="Enter doctor name" value="{{ $user->name }}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Phone <span
+                                                        class="text-danger">*</span></label>
+                                            <input name="phone" required type="phone" id="phone" class="form-control"
+                                                   placeholder="Enter doctor name" value="{{ $user->phone }}">
                                         </div>
                                     </div>
                                 </div>

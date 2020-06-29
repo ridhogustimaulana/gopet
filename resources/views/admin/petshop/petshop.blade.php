@@ -47,6 +47,7 @@
                                     <th>Street</th>
                                     <th>Districts</th>
                                     <th>City</th>
+                                    <th>Phone</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
@@ -63,6 +64,7 @@
                                         <td>{{ $petshop->street }}</td>
                                         <td>{{ $petshop->districts }}</td>
                                         <td>{{ $petshop->city }}</td>
+                                        <td>{{ $petshop->phone }}</td>
                                         <td>
                                             <a href="{{ route('admin.petshop.edit', $petshop->id) }}" class="btn btn-xs btn-outline-warning">
                                                 <i class="fa fa-pencil"></i>&ensp;Edit</a>
