@@ -212,7 +212,8 @@
                 console.log(lat);
                 var lng = coord[1].split(')');
                 console.log(lng);
-
+                var addressLoc = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat[1]+','+String(lng[0]).replace(/\s/g,'')+'&key=AIzaSyCz1LkOZmWBZRyC1WUJcrOqZiK-7yMuQXk';
+                
                 let address = $.get(addressLoc, function(data){
     // console.log("address",data.results[0].formatted_address.split(','));
     var loc = data.results[0].formatted_address.split(',')
