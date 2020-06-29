@@ -87,6 +87,17 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
+                                            <label class="control-label">Maps <span class="text-danger">*</span>
+                                            </label>
+                                            <div id="map2" style="height: 500px; z-index: 1;"></div>
+                                            <input type="hidden" id="longitude" class="form-control" name="longitude" value="{{ $washingAndSpa->longitude }}">
+                                            <input type="hidden" id="latitude" class="form-control" name="latitude" value="{{ $washingAndSpa->latitude }}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
                                             <label class="control-label">Street <span
                                                         class="text-danger">*</span></label>
                                             <input name="street" required type="text" id="street" class="form-control"
@@ -115,17 +126,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="control-label">Maps <span class="text-danger">*</span>
-                                            </label>
-                                            <div id="map2" style="height: 500px; z-index: 1;"></div>
-                                            <input type="hidden" id="longitude" class="form-control" name="longitude" value="{{ $washingAndSpa->longitude }}">
-                                            <input type="hidden" id="latitude" class="form-control" name="latitude" value="{{ $washingAndSpa->latitude }}">
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <div class="form-actions">
                                     <button type="submit" class="btn btn-outline-warning"><i class="fa fa-check"></i>
                                         Update
@@ -210,6 +211,25 @@
                 console.log(lat);
                 var lng = coord[1].split(')');
                 console.log(lng);
+
+                let address = $.get(addressLoc, function(data){
+    // console.log("address",data.results[0].formatted_address.split(','));
+    var loc = data.results[0].formatted_address.split(',')
+    if(loc.length > 6){
+        document.getElementById('street').value = loc[0]+", "+loc[1]+", "+loc[2];
+        document.getElementById('districts').value = loc[3];
+        document.getElementById('city').value = loc[4];
+    }else{
+        document.getElementById('street').value = loc[0]+", "+loc[1];
+        document.getElementById('districts').value = loc[2];
+        document.getElementById('city').value = loc[3];
+    }
+    
+    
+    console.log(loc);
+    
+    return loc
+                });
                 // myMarker.bindPopup("Moved to: " + lat[1] + ", " + lng[0] + ".");
                 document.getElementById('latitude').value = lat[1];
                 document.getElementById('longitude').value = lng[0];
