@@ -30,7 +30,7 @@
                     <a href="{{ route('admin.community') }}" aria-expanded="false"><i class="mdi mdi-google-circles-communities"></i><span class="hide-menu">&ensp;Community</span></a>
                 </li>
                 <li class="{{ Request::segment(2) === 'doctor' ? 'active' : null }}">
-                    <a href="{{ route('admin.doctor') }}" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">&ensp;Doctors</span></a>
+                    <a href="{{ route('admin.doctor') }}" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">&ensp;Rekamedis Hewan</span></a>
                 </li>
                 <li class="{{ Request::segment(2) === 'user-petshop' ? 'active' : null }}">
                     <a href="{{ route('admin.user-petshop') }}" aria-expanded="false"><i class="fa fa-user-o"></i><span class="hide-menu">&ensp;User Petshop</span></a>
