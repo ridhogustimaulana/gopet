@@ -84,8 +84,6 @@
                                                         data-placeholder="Choose a Category" tabindex="1">
                                                     <option value="Food" @if($item->category=='Food') selected @endif>Food</option>
                                                     <option value="Medicine" @if($item->category=='Medicine') selected @endif>Medicine</option>
-                                                    <option value="Item" @if($item->category=='Item') selected @endif>Item</option>
-                                                    <option value="Accessories" @if($item->category=='Accessories') selected @endif>Accessories</option>
                                                 </select>
                                             </div>
                                         </div>
