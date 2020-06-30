@@ -82,8 +82,8 @@
                                                         data-placeholder="Choose a Category" tabindex="1">
                                                     <option value="Food">Food</option>
                                                     <option value="Medicine">Medicine</option>
-                                                    <option value="Medicine">Item</option>
-                                                    <option value="Medicine">Accessories</option>
+                                                    <option value="Item">Item</option>
+                                                    <option value="Accessories">Accessories</option>
                                                 </select>
                                             </div>
                                         </div>
