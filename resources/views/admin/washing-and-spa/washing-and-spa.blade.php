@@ -43,6 +43,7 @@
                                     <th>#</th>
                                     <th>Image</th>
                                     <th>Washing and Spa</th>
+                                    <th>Phone</th>
                                     <th>Description</th>
                                     <th>Street</th>
                                     <th>Districts</th>
@@ -59,6 +60,7 @@
                                                  style="width: auto; height: 60px">
                                         </td>
                                         <td>{{ $washingAndSpa->name }}</td>
+                                        <td>{{ $washingAndSpa->phone }}</td>
                                         <td>{{ $washingAndSpa->description }}</td>
                                         <td>{{ $washingAndSpa->street }}</td>
                                         <td>{{ $washingAndSpa->districts }}</td>

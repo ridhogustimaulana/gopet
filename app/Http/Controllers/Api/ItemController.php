@@ -21,6 +21,7 @@ class ItemController extends Controller
                 'category' => $item->category,
                 'id_petshop' => $item->userPetshop->id,
                 'petshop' => $item->userPetshop->name,
+                'phone' => $item->userPetshop->phone
             ];
         }
         return response()->json([

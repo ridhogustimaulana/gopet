@@ -33,6 +33,7 @@ class PetshopController extends Controller
         $this->validate($request, [
             'image' => 'mimes:png,jpg,jpeg|max:2048',
             'name' => 'required',
+            'phone' => 'required',
             'email' => "required|email|unique:user_petshops,email,$id,id",
         ]);
         $user = UserPetshop::find($id);
@@ -44,6 +45,7 @@ class PetshopController extends Controller
             $user->image = $image;
         }
         $user->name = $request->name;
+        $user->phone = $request->phone;
         if($user->email != $request->email){
             $user->email = $request->email;
         }

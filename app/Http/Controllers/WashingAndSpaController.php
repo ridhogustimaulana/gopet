@@ -53,6 +53,7 @@ class WashingAndSpaController extends Controller
         $this->validate($request, [
             'image' => 'required|mimes:jpg,jpeg,png|max:1024',
             'name' => 'required|string',
+            'phone' => 'required',
             'description' => '',
             'street' => 'required',
             'districts' => 'required',
@@ -63,6 +64,7 @@ class WashingAndSpaController extends Controller
         $image = $request->file('image')->store('washing-and-spa');
         $washingAndSpa->image = $image;
         $washingAndSpa->name = $request->name;
+        $washingAndSpa->phone = $request->phone;
         $washingAndSpa->description = $request->description;
         $washingAndSpa->street = $request->street;
         $washingAndSpa->districts = $request->districts;
@@ -112,6 +114,7 @@ class WashingAndSpaController extends Controller
         $this->validate($request, [
             'image' => 'mimes:jpg,jpeg,png|max:1024',
             'name' => 'required|string',
+            'phone' => 'required',
             'description' => '',
             'street' => 'required',
             'districts' => 'required',
@@ -127,6 +130,7 @@ class WashingAndSpaController extends Controller
             $washingAndSpa->image = $image;
         }
         $washingAndSpa->name = $request->name;
+        $washingAndSpa->phone = $request->phone;
         $washingAndSpa->description = $request->description;
         $washingAndSpa->street = $request->street;
         $washingAndSpa->districts = $request->districts;

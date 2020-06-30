@@ -34,12 +34,14 @@ class PetshopAuthController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|min:5',
+            'phone' => 'required',
             'email' => 'required|email|unique:user_petshops',
             'password' => 'required|min:6',
         ]);
 
         UserPetshop::create([
             'name' => $request->name,
+            'phone' => $request->phone,
             'email' => $request->email,
             'password' => bcrypt($request->password),
         ]);

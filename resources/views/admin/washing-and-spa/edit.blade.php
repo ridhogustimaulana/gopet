@@ -75,6 +75,17 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Phone <span
+                                                        class="text-danger">*</span></label>
+                                            <input name="phone" required type="phone" id="phone" class="form-control"
+                                                   value="{{ $washingAndSpa->phone }}" placeholder="Enter washing and spa phone">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
