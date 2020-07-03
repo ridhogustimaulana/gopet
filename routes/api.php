@@ -48,6 +48,7 @@ Route::post('user/profile/update', 'Api\UserPetshopController@updateProfile');
 
 // Routes user for order
 Route::post('user/order', 'Api\UserPetshopController@store');
+Route::delete('user/oreder/{id}', 'Api\UserPetshopController@cancelOrder');
 
 Route::post('user/diagnosis', 'Api\DiagnosisController@store');
 Route::get('user/diagnosis/history', 'Api\DiagnosisController@history');

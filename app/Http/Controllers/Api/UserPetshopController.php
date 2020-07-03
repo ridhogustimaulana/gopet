@@ -119,4 +119,24 @@ class UserPetshopController extends Controller
             );
         }
     }
+
+    public function cancelOrder(Request $request) {
+        $rules = [
+            'id_item' => 'required'
+        ];
+
+        $validator = Validator::make($request->all(), $rules);
+        if ($validator->fails()) {
+            return response()->json(array(
+                'message' => 'check your request again',
+                'status' => false), 400);
+        } else {
+            $order = Order::find($request->id_item);
+            $order->delete();
+
+            return response()->json(
+                Response::transform($order, "An order has been canceled", true), 201
+            );
+        }
+    }
 }
