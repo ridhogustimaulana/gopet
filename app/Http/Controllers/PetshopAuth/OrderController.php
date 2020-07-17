@@ -31,6 +31,9 @@ class OrderController extends Controller
 
     public function update(Request $request, $id) {
         $order = Order::find($id);
+        if (!$order) {
+            return redirect()->route('user-petshop.order')->with(['fail' => 'Id Not Found']);
+        }
         if ($order->status){
             $order->status = false;
         } else {
