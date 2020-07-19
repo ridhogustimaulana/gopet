@@ -21,7 +21,7 @@
                     <a href="{{ route('admin.petshop') }}" aria-expanded="false"><i class="fa fa-home"></i><span class="hide-menu">&ensp;PetShop</span></a>
                 </li>
                 <li class="{{ Request::segment(2) === 'washing-and-spa' ? 'active' : null }}">
-                    <a href="{{ route('admin.washing-and-spa') }}" aria-expanded="false"><i class="fa fa-shower"></i><span class="hide-menu">&ensp;Washing dan Spa</span></a>
+                    <a href="{{ route('admin.washing-and-spa') }}" aria-expanded="false"><i class="fa fa-shower"></i><span class="hide-menu">&ensp;Perawatan</span></a>
                 </li>
                 <li class="{{ Request::segment(2) === 'buying-animal' ? 'active' : null }}">
                     <a href="{{ route('admin.buying-animal') }}" aria-expanded="false"><i class="fa fa-dollar"></i><span class="hide-menu">&ensp;Buying Animals</span></a>
@@ -30,7 +30,7 @@
                     <a href="{{ route('admin.community') }}" aria-expanded="false"><i class="mdi mdi-google-circles-communities"></i><span class="hide-menu">&ensp;Community</span></a>
                 </li>
                 <li class="{{ Request::segment(2) === 'doctor' ? 'active' : null }}">
-                    <a href="{{ route('admin.doctor') }}" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">&ensp;Rekamedis Hewan</span></a>
+                    <a href="{{ route('admin.doctor') }}" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">&ensp;Rekamedis H ewan</span></a>
                 </li>
                 <li class="{{ Request::segment(2) === 'user-petshop' ? 'active' : null }}">
                     <a href="{{ route('admin.user-petshop') }}" aria-expanded="false"><i class="fa fa-user-o"></i><span class="hide-menu">&ensp;User Petshop</span></a>
